@@ -1,0 +1,79 @@
+.Main{
+    padding-left: 70%;
+    margin: -40%;
+    width: 65%;
+    height: 80vh;
+}
+
+.main-title{
+    display: flex;
+}
+
+.main-note-shortcut{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: xx-large;  
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-note-shortcut p{
+    text-align: center;
+    font-family: 'Roboto';
+    color: #ffff;
+    padding-bottom: 5px;
+}
+.main-note-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    font-size: large;
+}
+
+.main-text-area{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 4%;
+    overflow-y: scroll;
+}
+
+.main-notes{
+    margin-left: 10%;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 0.1ch;
+    line-height: 2.5ch;
+}
+
+.main-text-area-time,.main-text-area-date{
+    fill: Solid#353535;
+    font-size: large;
+}
+
+.main-input-area{
+    margin-top: 40%;
+    width: 65vw;
+    height: 24vh;
+}
+
+#body{
+    padding: 1%;
+    width: 65vw;
+    height: 15vh;
+    background-color: rgb(233, 224, 215);
+}
+.main-input-area button{
+    border: 0px;
+    cursor: pointer;
+    margin-left: 94%;
+    margin-top: -40%;
+    background-color: rgb(233, 224, 215);
+}
+
+
+

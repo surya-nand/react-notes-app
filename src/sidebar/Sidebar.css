@@ -1,0 +1,76 @@
+.sidebar{
+    width: 28%;
+    height: 80vh;
+    border-right: 1px solid #c6bfbf;
+}
+
+.sidebar-header{
+    justify-content: space-between;
+    padding-left: 2%;
+}
+
+.sidebar-header h1{
+    font-family: Roboto;
+    letter-spacing: 2%;
+    fill: solid #000000;
+}
+
+.sidebar-header button{
+    background-color: #000000;
+    color: #ddd;
+    border-radius: 50px;
+    width: 15vw;
+    height: 6vh;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.add-button{
+    padding-right: 9px;
+    font-weight: 1000;
+}
+
+.sidebar-note{
+    display: flex;
+    padding: 6%;
+    cursor: pointer;
+}
+
+.sidebar-notes {
+    height: 80vh;
+    overflow-y: scroll;
+
+}
+
+.sidebar-note-shortcut{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: xx-large;  
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-note-shortcut p{
+    text-align: center;
+    font-family: 'Roboto';
+    color: #ffff;
+    padding-bottom: 5px;
+}
+.sidebar-note-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    font-size: large;
+}
+
+.sidebar-note:hover {
+    background: #ddd;
+  }
