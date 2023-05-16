@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 
-export default function Sidebar({notes, addNewnote}) {
+export default function Sidebar({notes, addNewnote, activeNotes, setActiveNotes}) {
   return (
     <div>
         <div className="sidebar">
@@ -11,7 +11,8 @@ export default function Sidebar({notes, addNewnote}) {
             </div>
             <div className="sidebar-notes">
             {notes.map((note) => (
-                                <div className="sidebar-note">
+                                <div className={`sidebar-note ${note.id === activeNotes && "active"}`}
+                                onClick={() => setActiveNotes(note.id)}>
                                 <div className="sidebar-note-shortcut">
                                     <p>{note.shortcut}</p>
                                 </div>

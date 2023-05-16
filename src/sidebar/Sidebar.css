@@ -39,10 +39,19 @@
     cursor: pointer;
 }
 
+.sidebar-note.active,
+.sidebar-note.active small{
+  background: #08c;
+}
+
+.sidebar-note.active:hover{
+    background-color: #08c;
+}
+
+
 .sidebar-notes {
     height: 80vh;
     overflow-y: scroll;
-
 }
 
 .sidebar-note-shortcut{

@@ -2,7 +2,7 @@ import React from "react";
 import "./Main.css";
 import Enterbutton from './Assets/Vector (5).png'
 
-export default function Main({notes}) {
+export default function Main() {
   return (
     <div className="Main">
       <div className="main-title">
