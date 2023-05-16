@@ -1,23 +1,25 @@
 import React from 'react'
 import './Sidebar.css'
 
-export default function Sidebar() {
+export default function Sidebar({notes, addNewnote}) {
   return (
     <div>
         <div className="sidebar">
             <div className="sidebar-header">
                 <h1>Pocket Notes</h1>
-                <button><span className='add-button'>+</span>Create Notes Group</button>
+                <button onClick={addNewnote}><span className='add-button'>+</span>Create Notes Group</button>
             </div>
             <div className="sidebar-notes">
-                <div className="sidebar-note">
-                    <div className="sidebar-note-shortcut">
-                        <p>xx</p>
-                    </div>
-                    <div className="sidebar-note-title">
-                        <strong>TITLE</strong>
-                    </div>            
-                </div>
+            {notes.map((note) => (
+                                <div className="sidebar-note">
+                                <div className="sidebar-note-shortcut">
+                                    <p>{note.shortcut}</p>
+                                </div>
+                                <div className="sidebar-note-title">
+                                    <strong>{note.title}</strong>
+                                </div>            
+                            </div>
+            ))}
             </div>
         </div> 
     </div>

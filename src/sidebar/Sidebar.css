@@ -48,7 +48,7 @@
 .sidebar-note-shortcut{
     width: 60px;
     height: 60px;
-    background-color: aqua;
+    background-color: green;
     border-radius: 50%;
     font-size: xx-large;  
     font-weight: 400;
@@ -61,7 +61,8 @@
     text-align: center;
     font-family: 'Roboto';
     color: #ffff;
-    padding-bottom: 5px;
+    padding-bottom: -4px;
+    font-size: 4vh;
 }
 .sidebar-note-title{
     display: flex;
