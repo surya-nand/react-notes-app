@@ -2,15 +2,17 @@ import React from "react";
 import "./Main.css";
 import Enterbutton from './Assets/Vector (5).png'
 
-export default function Main() {
-  return (
-    <div className="Main">
+export default function Main({activeNote}) {
+
+  return <div>
+    {
+      activeNote && <div className="Main">
       <div className="main-title">
         <div className="main-note-shortcut">
-          <p>xx</p>
+          <p>{activeNote.shortcut}</p>
         </div>
         <div className="main-note-title">
-          <strong>TITLE</strong>
+          <strong>{activeNote.title}</strong>
         </div>
       </div>
       <div className="main-text-area">
@@ -32,5 +34,8 @@ export default function Main() {
         <button><img id="enterimg" src={Enterbutton} alt=''></img></button>
       </div>
     </div>
-  );
+    }
+  </div>
+    
+    
 }

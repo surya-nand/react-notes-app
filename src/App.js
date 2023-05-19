@@ -2,12 +2,22 @@ import "./App.css";
 import Sidebar from "./sidebar/Sidebar";
 import Main from "./main/Main";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import uuid from 'react-uuid';
 
 function App() {
   const [notes, setNotes] = useState([]);
   const [activeNotes, setActiveNotes] = useState(false)
+  const [activeNote  , setActiveNote] = useState(null)
+  /* To use activeNotes in main duplicate activeNotes id to getActiveNote */
+
+  const getActiveNote = () => {
+    setActiveNote(notes.find(({ id }) => id === activeNotes));
+  };
+  useEffect(() => {
+     getActiveNote()
+  },[activeNotes])
+
 
 
   const addNewnote= () => {
@@ -39,7 +49,7 @@ function App() {
   return (
     <div className="App">
       <Sidebar notes={notes} addNewnote={addNewnote}   activeNotes={activeNotes} setActiveNotes={setActiveNotes}/>
-      <Main  />
+      <Main activeNote={activeNote} />
     </div>
   );
 }
